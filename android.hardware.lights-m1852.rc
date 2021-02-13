@@ -1,0 +1,8 @@
+service vendor.light-m1852 /vendor/bin/hw/android.hardware.lights-service.m1852
+    class hal
+    user system
+    group system
+    shutdown critical
+
+on init
+    chown system system /sys/class/leds/mx-led/breath
