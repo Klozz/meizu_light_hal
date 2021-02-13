@@ -25,13 +25,9 @@ namespace light {
 
 const static std::map<LightType, const char*> kLogicalLights = {
     {LightType::BACKLIGHT,     LIGHT_ID_BACKLIGHT},
-    {LightType::KEYBOARD,      LIGHT_ID_KEYBOARD},
-    {LightType::BUTTONS,       LIGHT_ID_BUTTONS},
     {LightType::BATTERY,       LIGHT_ID_BATTERY},
     {LightType::NOTIFICATIONS, LIGHT_ID_NOTIFICATIONS},
-    {LightType::ATTENTION,     LIGHT_ID_ATTENTION},
-    {LightType::BLUETOOTH,     LIGHT_ID_BLUETOOTH},
-    {LightType::WIFI,          LIGHT_ID_WIFI}
+    {LightType::ATTENTION,     LIGHT_ID_ATTENTION}
 };
 
 light_device_t* getLightDevice(const char* name) {
